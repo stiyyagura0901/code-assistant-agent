@@ -1,0 +1,22 @@
+{
+  "name": "code-assistant-agent",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc; node dist/index.js",
+    "inngest-dev": "npx inngest-cli@latest dev -u http://localhost:3000/api/inngest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inngest/agent-kit": "latest",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.1"
+  }
+}
