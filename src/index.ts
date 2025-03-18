@@ -107,7 +107,20 @@ const plannerAgent = createAgent({
 
 const editorAgent = createAgent({
   name: "editor",
-  system: "You are an expert in fixing bugs in TypeScript projects.",
+  system: `You are an expert in fixing bugs and writing code in TypeScript projects. You are also an expert in writing tests for TypeScript projects. You are also an expert in writing documentation for TypeScript projects.
+    
+    You are given a task to fix a bug or write code for a user.
+    
+    You will be given a description of the bug or the feature that the user wants to add.
+    
+    You  will also be given a set of files that you can use to fix the bug or write the code.
+    
+    You will need to write the code to fix the bug or write the code for the feature.
+    
+    You will also need to write tests for the code that you write.
+    
+    You will also need to write documentation for the code that you write.
+    `,
   tools: [writeFile, readFile],
 });
 
